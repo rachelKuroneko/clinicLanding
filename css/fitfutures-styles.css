@@ -1,0 +1,665 @@
+/*btn color: #d2212f */
+/* input background: #e1e1e1 */
+
+/* SHARED CSS with National and Albany page */
+
+@font-face {
+    font-family: 'bebas_neueregular';
+    src: url('../fonts/bebasneue-webfont.woff2') format('woff2'),
+         url('../fonts/bebasneue-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'bebas_neuebook';
+    src: url('../fonts/bebasneue_book-webfont.woff2') format('woff2'),
+         url('../fonts/bebasneue_book-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.main-landing > a > img {
+    margin-top: 15px;
+}
+
+body {
+    background: #000;
+    /*background-image: url("/img/9Round-bg-NZ-min.jpg"); "{{ asset('img/9Round-bg-NZ-min.png') }}"*/
+    /*background-image: url("/img/9Round-bg-NZ-min.jpg");*/
+    background-size: cover;
+    background-position: 50%;
+    min-height: 100vh;
+}
+
+.albany-body {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+27,000000+100&1+27,0+100 */
+    background: -moz-linear-gradient(left, rgba(0,0,0,1) 27%, rgba(0,0,0,0) 100%),
+                url("/img/9Round-albany-bg-min.jpg"); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, rgba(0,0,0,1) 27%,rgba(0,0,0,0) 100%),
+                url("/img/9Round-albany-bg-min.jpg"); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, rgba(0,0,0,1) 27%,rgba(0,0,0,0) 100%),
+                url("/img/9Round-albany-bg-min.jpg"); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#00000000',GradientType=1 ); /* IE6-9 */
+    /*background-image: url("/img/9Round-albany-bg-min.jpg"); "{{ asset('img/9Round-bg-NZ-min.png') }}"*/
+    background-size: cover;
+    background-position: 50%;
+    min-height: 100vh;
+}
+
+.wellington-body {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+27,000000+100&1+27,0+100 */
+    background: -moz-linear-gradient(left, rgba(0,0,0,1) 27%, rgba(0,0,0,0) 100%),
+                url("/img/9Round_NZ_wellington.jpg"); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, rgba(0,0,0,1) 27%,rgba(0,0,0,0) 100%),
+                url("/img/9Round_NZ_wellington.jpg"); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, rgba(0,0,0,1) 27%,rgba(0,0,0,0) 100%),
+                url("/img/9Round_NZ_wellington.jpg"); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#00000000',GradientType=1 ); /* IE6-9 */
+    /*background-image: url("/img/9Round-albany-bg-min.jpg"); "{{ asset('img/9Round-bg-NZ-min.png') }}"*/
+    background-size: cover;
+    background-position: 50%;
+    min-height: 100vh;
+}
+
+.success-h2 {
+    text-align: center;
+    margin-top: 80px;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+    line-height: 54px;
+    letter-spacing: 2px;/*was 0.8px*/
+    font-size: 44px;
+    font-weight: 700;
+}
+
+.success-h2-marginless {
+    margin-top: 20px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+    line-height: 54px;
+    letter-spacing: 2px;/*was 0.8px*/
+    font-size: 44px;
+    font-weight: 700;
+}
+
+.success-subheading {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.9px;
+    color: #fff;
+    font-size: 16px;
+    margin: 15px 0 30px;
+}
+
+.landing-subheading {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.9px;
+    color: #fff;
+    font-size: 16px;
+    margin: 15px 0 30px;
+}
+
+.landing-form > form > div > input {
+    width: 100%;
+    background: #e1e1e1;
+    padding: 5px 20px;
+    border: none;
+}
+
+.landing-form > form > div > select {
+    height: 32px;
+    width: 100%;
+    font-weight: 500;
+    background: #e1e1e1;
+    font-family: 'Roboto', sans-serif;
+    color: #000;
+    padding: 5px 16px;
+    border: none;
+    text-transform: uppercase;
+}
+
+.landing-form > form > div > input::placeholder {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #000;
+}
+
+.form-control {
+    border-radius: 0px;
+}
+
+.btn-div {
+    text-align: right;
+}
+
+.btn-success-page {
+    text-align: center;
+}
+
+
+/***** new video rules *****/
+
+.mute-video {
+    background:url('/img/mute.png') no-repeat center;
+    background-size:32px;
+    border:0;
+    width:32px;
+    height:32px;
+    text-indent:-999px;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    z-index: 999;
+}
+
+.unmute-video {
+    background:url('/img/unmute.png') no-repeat center;
+    background-size:32px;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    z-index: 999;
+}
+
+.carousel-inner {
+    height: 100%;
+}
+
+.carousel-control.left, .carousel-control.right{
+    background-image: none;
+    display: none;
+}
+
+.carousel-control .icon-prev:before, .carousel-control .icon-next:before {
+    content: none;
+}
+
+.carousel {
+    height: 85vh;
+}
+
+
+@media(max-width: 570px){
+    .carousel-caption {
+        bottom:5%;        
+    }
+    .carousel-indicators{
+        display: none;
+    }
+    .carousel-caption h2 {
+        line-height: 1.2;
+        font-size: 28px;
+    }
+}
+
+
+@media (min-width: 200px){
+    .video-caro{
+        height: 210px;
+    }
+}
+@media (min-width: 414px){
+    .video-caro{
+        height: 230px;
+    }
+}
+@media (min-width: 600px){
+    .video-caro{
+        height: 400px;
+    }
+}
+@media (min-width: 991px){
+    .video-caro{
+        height: 575px;
+    }
+}
+@media (min-width: 1200px){
+    .video-caro{
+        height: 670px;
+    }
+}
+@media (min-width: 1400px){
+    .video-caro{
+        height: 790px;
+    }
+}
+@media (min-width: 1500px){
+    .video-caro{
+        height: 860px;
+    }
+}
+@media (min-width: 1900px){
+    .video-caro{
+        height: 1070px;
+    }
+}
+@media (min-width: 2300px){
+    .video-caro{
+        height: 1290px;
+    }
+}
+@media (min-width: 2600px){
+    .video-caro{
+        height: 1690px;
+    }
+}
+@media (min-width: 200px){
+    .carousel-caption {
+        position: absolute;
+        right: 10%;
+        bottom: 35%;
+        left: 10%;
+        z-index: 10;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        color: #000000;
+        text-align: left;
+        text-shadow: none;
+    }
+    .carousel-indicators{
+        position: absolute;
+        right: 0%;
+        bottom: 30%;
+        left: initial;
+        z-index: 10;
+        background:none;
+        height:25px;
+        bottom:0px;
+        margin-left: auto;
+        width: 20px;
+        top: 40%;
+    }
+}
+
+@media (min-width: 992px){
+    .carousel-caption {
+        position: absolute;
+        right: 10%;
+        bottom: 35%;
+        left: 10%;
+        z-index: 10;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        color: #000000;
+        text-align: left;
+        text-shadow: none;
+    }
+    .carousel-indicators{
+        position: absolute;
+        right: 0%;
+        bottom: 30%;
+        left: initial;
+        z-index: 10;
+        background:none;
+        height:25px;
+        bottom:0px;
+        margin-left: auto;
+        width: 20px;
+        top: 40%;
+    }
+}
+
+@media (min-width: 1200px){
+    .carousel-caption {
+        position: absolute;
+        right: 10%;
+        bottom: 35%;
+        left: 10%;
+        z-index: 10;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        color: #000000;
+        text-align: left;
+        text-shadow: none;
+    }
+    .carousel-indicators{
+        position: absolute;
+        right: 0%;
+        bottom: 30%;
+        left: initial;
+        z-index: 10;
+        background:none;
+        height:25px;
+        bottom:0px;
+        margin-left: auto;
+        width: 20px;
+        top: 40%;
+    }
+}
+
+@media (min-width: 1600px){
+    .carousel-caption {
+        position: absolute;
+        right: 20%;
+        bottom: 35%;
+        left: 20%;
+        z-index: 10;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        color: #000000;
+        text-align: left;
+        text-shadow: none;
+    }
+    .carousel-indicators{
+        position: absolute;
+        right: 0%;
+        bottom: 30%;
+        left: initial;
+        z-index: 10;
+        background:none;
+        height:25px;
+        bottom:0px;
+        margin-left: auto;
+        width: 20px;
+        top: 40%;
+    }
+}
+
+
+
+
+/* end new video rules */
+.footer-container {
+    /*position: absolute;*/
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background: #000;
+}
+
+.footer {
+    /*margin-top: 115px;*/
+    /*margin-bottom: 20px;
+    display: flex;
+    align-items: center;*/
+    height: 60px;
+}
+
+
+
+.hero-section-bg, .herobg {
+    background-image: url(/img/inside.jpg);
+    /* WAS url(/img/hero-image-bg.png)  url(/img/FitFutures-hero-bg-min.jpg) */
+    background-size: cover;
+    padding-bottom: 75px;
+    min-height: 700px;
+    max-height: 900px;
+    color:#fff;
+    image-rendering: auto;
+}
+
+.hero-info{
+    width: 100%;
+    height:70vh;
+    color:#fff;
+}
+
+.ninelogo{
+    max-width: 400px;
+    margin-top: 0px;
+}
+
+/* new 4-9-17 below */
+.fitf-list > ul > li {
+    font-size: 30px;
+    font-weight: 500;
+    font-family: 'Roboto Slab', serif;
+    color: #fff;
+    text-align: left;
+}
+
+
+/* end 4-9-17 above */
+
+
+@media screen and (max-width: 1200px) {
+    .albany-landing-h2 {
+        font-size: 30px;
+        line-height: 46px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .landing-h2, .albany-landing-h2, .success-h2 {
+        margin-top: 50px;
+        font-size: 34px;
+        line-height: 46px;
+        text-align: center;
+    }
+
+    .ninelogo{
+        max-width: 300px;
+        margin-top: 0px;
+        padding: 15px;
+    }
+
+    .success-h2-marginless {
+        margin-top: 25px;
+        font-size: 34px;
+        line-height: 46px;
+        text-align: center;
+    }
+
+    .landing-subheading{
+        text-align: center;
+    }
+
+    .form-row {
+        min-height: 0;/* cancel fighter bg height */
+        background-color: #000;
+        background-image:none;
+        padding-bottom: 15px;
+    }
+
+    .landing-submit-btn{
+        width:100%;
+    }
+
+    .herobg {
+        padding: 0 !important;
+        
+    }
+
+    .hero-info {
+        height: auto !important;
+    }
+
+    /*.footer {
+        margin-bottom: 20px;
+    }*/
+}
+
+.form-row {
+    background-image: url("../img/form-bg.png");
+    background-size: cover;
+    background-position: 50%;
+    padding-bottom: 75px;
+    /* min-height: 77vh; control bg height of fighter */
+    background-color: rgba(241, 241, 241, 0.82);
+}
+
+.offerbg{
+    background: #bfe6a8;
+    background-size: cover;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+.navbar{
+    background-color: #fff;
+    margin-bottom: 0px;
+    border-radius: 0px;
+}
+
+.offerbg h2{
+    font-family: 'Roboto Slab', serif;
+    color:#fff;
+}
+
+#details h2{
+    font-family: 'Roboto Slab', serif;
+}
+
+.submission-form input{
+    border-radius: 4px;
+    border:2px solid #232777;
+    color:#232777;
+    background-color: #fff;
+    width:100%;
+    padding: 6px;
+    font-family: 'Roboto Slab', serif;
+}
+
+.landing-submit-btn {
+    font-family: 'bebas_neueregular', sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.9px;
+    color: #fff;
+    background: #232777;
+    border: none;
+    border-radius: 6px;
+    font-size: 25px;
+    margin-top: 5px;
+    padding: 3px;
+    text-transform: uppercase;
+    transition: 0.3s all ease-in-out;
+    text-align: center;
+    width:150px;
+    float:right;
+}
+
+.landing-submit-btn:hover {
+    color: #fff;
+    background: #232777;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.landing-h2{
+    margin-top: 60px;
+    font-family: 'Roboto Slab', serif;
+    color: #232777;
+    /*text-transform: uppercase;*/
+    letter-spacing: 2px;/*was 0.8px*/
+    font-size: 25px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.offerimg{
+    max-width: 300px;
+}
+
+.thickline{
+    width: 160px;
+    height: 14px;
+    background-color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media screen and (max-width: 768px) {
+    .heroarea{
+        margin-top: 100px;
+        /* margin-bottom: 100px; REMOVED FOR IMAGE DIV */
+    }
+
+    .hero-text{
+        font-family: 'bebas_neuebook', sans-serif;
+        font-size: 50px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    .header-col{
+        text-align: center;
+    }
+
+    .header-info{
+        margin-top: 30px;
+        font-family: 'Roboto Slab', serif;
+        color: #232777;
+        /* text-transform: uppercase; */
+        letter-spacing: 2px;
+        font-size: 14px;
+        font-weight: 600;
+        text-align: center;
+        float:none;
+        margin-bottom: 20px;
+    }
+
+    .header-info span{
+        color:#95d60a;
+    }
+
+    .herobg {
+        padding-bottom: 0 !important;
+        min-height: auto !important;
+    }
+
+    .hero-info {
+        height: auto !important;
+    }
+
+
+}
+@media screen and (min-width: 768px) {
+    .heroarea{
+        margin-top: 125px;
+        /* margin-bottom: 200px; DISABLED FOR IMAGE DIV */
+    }
+    .hero-text{
+        font-family: 'bebas_neuebook', sans-serif;
+        font-size: 70px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    .header-info{
+        margin-top: 30px;
+        float:right;
+        font-family: 'Roboto Slab', serif;
+        color: #232777;
+        /* text-transform: uppercase; */
+        letter-spacing: 2px;
+        font-size: 14px;
+        font-weight: 600;
+        text-align: right;
+        margin-bottom: 20px;
+    }
+
+    .header-info span{
+        color:#95d60a;
+    }
+}
+
+.hero-subtext{
+        font-family: 'bebas_neuebook', sans-serif;
+        font-size: 23px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        text-align: left;
+        text-transform: uppercase;
+    }
+
+.footer-text{
+    margin-top:20px;
+    font-size: 20px;
+    font-family: 'bebas_neuebook', sans-serif;
+    text-decoration: none;
+    color:#fff;
+}
+
+.fright{
+    text-align: right;
+}
+
+.footer-text a, .fright i, .fright a{
+    color:#fff !important;
+}
